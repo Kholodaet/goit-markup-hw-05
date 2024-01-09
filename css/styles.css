@@ -475,6 +475,15 @@ ul {
   border-radius: 4px;
 }
 
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #404bbf;
+  cursor: pointer;
+}
+
+
+
 .icon-frame {
   margin-left: 16px;
 }
@@ -576,6 +585,7 @@ button {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .modal-btn:hover,
@@ -586,11 +596,15 @@ button {
 }
 
 
+
+
 .icon-close {
  
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
+
 
 
 .text-modal {
@@ -675,6 +689,9 @@ button {
   margin-bottom: 24px;
 }
 
+
+
+
 .label-checkbox {
   font-size: 12px;
   line-height: 1.17;
@@ -703,12 +720,11 @@ button {
 
 
 
-.checkbox-form:checked + label span {
+input:checked + label > span  {
   background-color: var(--background-checked, #404bbf);
   border: none;
   fill: var(--icon-color-checked, #f4f4fd);
 }
-
 
 
 
@@ -731,5 +747,22 @@ button {
   cursor: pointer;
   background-color: #4d5ae5;
   border: none;
+
+
+padding: 16px 32px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 4px;
+
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+.send-btn:hover,
+.send-btn:focus {
+  background-color: #404bbf;
+  cursor: pointer;
 }
